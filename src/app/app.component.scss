@@ -1,33 +1,54 @@
-.container{
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .addTodo {
+    margin-top: 15px;
+  }
+  .todos {
     display: flex;
-    flex-direction:column;
+    justify-content: space-between;
+    // width: 25%;
+  }
+  .todoCard {
+    margin: 15px;
+  }
+  .checked {
+    text-decoration: line-through;
+  }
+  .InputDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    textarea{
-        width: 50%;
-        height: 50px;
-        border: 2px solid rgb(99, 153, 49);
-        resize: none;
-        padding: 5px;
-    }
-    .todoInput{
-        margin-bottom: 15px;
-        width: 50%;
-        height: 25px;
-        border: 2px solid rgb(99, 153, 49);
-        resize: none;
-        padding: 5px;
-    }
-    .addTodo{
-        margin-top: 15px;
-    }
-    .todos{
-        display: flex;
-        justify-content: space-between;
-        // width: 25%;
-    }
-    .todoCard{
-        margin: 15px;
-    }
-    
+  }
+  .InputInsideDiv {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  textarea {
+    width: 100%;
+    height: 50px;
+    border: 2px solid rgb(99, 153, 49);
+    resize: none;
+    padding: 5px;
+  }
+  .todoInput {
+    width: 100%;
+    height: 25px;
+    border: 2px solid rgb(99, 153, 49);
+    resize: none;
+    padding: 5px;
+  }
+  .inputError {
+    border: 2px solid rgb(235, 8, 8);
+  }
+  .spanError {
+    margin-top: 3px;
+    font-size: smaller;
+    color: rgb(235, 8, 8);
+  }
 }
